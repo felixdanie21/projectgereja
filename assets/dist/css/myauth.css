@@ -1,0 +1,29 @@
+body{
+    /* color */
+    /* background-color: yellow !important; */
+    
+    /* image */
+    background-image: url('..//img/bgauth.jpg') !important;
+    background-size: cover;
+    background-repeat: none;
+
+    /* Menambahkan latar belakang gelap dengan opasitas */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+}
+
+.login-box {
+    /* jika background gambar */
+    z-index:1;
+}
+
+.login-name {
+    color: white;
+}
